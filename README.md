@@ -4,7 +4,7 @@
 
 ## Ejercicio 1
 
-- Instalar el IDE Visual Studio Code
+1. Instalar el IDE Visual Studio Code
 ![Logo Visual Studio](/img/vs.png)
--Instalar GIT y GIT Bash
+2. Instalar GIT y GIT Bash
 ![Logo Git](/img/git.png)
