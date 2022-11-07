@@ -117,4 +117,169 @@ El content-type indica el tipo de archivo utilizado en la comunicación con el o
 
 1. **Realizar un request GET a la URL: https://procontacto-reclutamiento-default-rtdb.firebaseio.com/contacts.json**
 
+![Primer get](/img/get.png)
 
+2. **Realizar un request POST a la URL anterior con body:**
+```
+{
+"name": "Carlos Andrés Conde Besil",  
+"email": "carlos.conde@procontacto.com.mx"
+}
+```
+![Post](/img/post.png)
+
+3. **Realizar nuevamente un GET a la URL. ¿Qué diferencias se observan entre las llamadas del punto 1 y 3?**
+
+La diferencia radica en que la segunda llamada incluye la información que se agregó en el POST del punto 2, como se muestra a continuación.
+
+![Segundo get](/img/get2.png)
+
+
+## Ejercicio 4
+
+Realizar los siguientes módulos de Trailhead: https://trailhead.salesforce.com/users/norozco3/trailmixes/introduccion
+
+La resolución de los módulos puede ser consultada en mi [perfil de Trailhead](https://trailblazer.me/id/carlosconde).
+
+
+## Ejercicio 5
+
+Explicar qué son conceptualmente, qué datos almacenan en forma estándar y cómo se relacionan al resto cada uno de los siguientes objetos de Salesforce.
+
+1. **Lead:** Representan a personas que están interesadas en el producto o servicio. Provienen de internet, tarjetas de contacto que el equipo almacena, asistentes de conferencias, entre otros. 
+
+    - Address
+    - Annual Revenue
+    - Campaign
+    - Clean Status
+    - Company
+    - Company D-U-N-S Number
+    - Created By
+    - Current Generator(s)
+    - D&B Company
+    - Data.com Key
+    - Description
+    - Do Not Call
+    - Email & Email Opt Out
+    - Fax & Fax Opt Out
+    - Individual
+    - Industry
+    - Last Modified By
+    - Last Transfer Date
+    - Lead Owner
+    - Lead Source
+    - Lead Status
+    - Mobile
+    - Name
+    - No. of Employees
+    - Number of Locations
+    - Phone
+    - Primary
+    - Product Interest
+    - Rating
+    - SIC Code
+    - Title
+    - Website
+
+2. **Account:** Representan compañías con las que se hace negocio o relacionadas con el mismo (clientes, socios, competencia).
+
+    - Account Name, Number, Owner, Site Source
+    - Active
+    - Annual Revenue
+    - Billing Address
+    - Clean Status
+    - Created By
+    - Customer Priority
+    - D&B Company
+    - Data.com Key
+    - Description
+    - D-U-N-S Number
+    - Einstein Account Tier
+    - Employees
+    - Fax
+    - Industry
+    - Last Modified By
+    - NAICS Code & Description
+    - Number of Locations
+    - Ownership
+    - Parent Account
+    - Phone
+    - Rating 
+    - Shipping Address
+    - SIC Code & Description
+    - SLA, Expiration Date, Serial Number
+    - Ticker Symbol
+    - Tradestyle
+    - Type
+    - Upsell Opportunity
+    - Website
+    - Year Started
+
+3. **Contact:** Son personas asociadas con una cuenta, con las que se requiere comunicación y relaciones de negocio. Provienen de Leads u otras fuentes y tienen especial utilidad en permitir darle seguimiento a la información que provoca relaciones efectivas. 
+
+    - Account Name
+    - Assistant & Asst. Phone
+    - Birthdate
+    - Clean Status
+    - Contact Owner
+    - Created By
+    - Data.com Key
+    - Department
+    - Description
+    - Do Not Call
+    - Email & Email Opt out
+    - Fax & Fax Opt Out
+    - Home Phone
+    - Individual
+    - Languages
+    - Lasy Modified By
+    - Last Stay-in-Touch Request Date & Last Stay-in-Touch Save Date
+    - Lead Source
+    - Level
+    - Mailing Address
+    - Mobile
+    - Name
+    - Reports To
+    - Stage
+    - Title
+
+4. **Opportunity:** Son tratos cualificados con los que el equipo de ventas está trabajando. Ayudan a monitorear la etapa en la que se encuentra el proceso de venta. Una oportunidad se suele crear cuando un Lead es convertido.
+
+    - Account Name
+    - Amount
+    - Close Date
+    - Contract
+    - Created By
+    - Current Generator(s)
+    - Delivery/Installation Status
+    - Description
+    - Expected Revenue
+    - Forecast Category
+    - Lasy Modified By
+    - Lead Source
+    - Main Competitor(s)
+    - Next Step
+    - Opportunity Name, Owner, Score
+    - Order Number
+    - Price Book
+    - Primary Campaign Source
+    - Private
+    - Probability (%)
+    - Quantity
+    - Stage
+    - Tracking Number
+    - Type
+
+5. **Product:** Son artículos o servicios que se ofrecen a los clientes. Cada producto puede existir en múltiples Price Books con diferentes precios.
+ 
+    - Active
+    - Created By
+    - Display URL
+    - External Data Source
+    - External ID
+    - Last Modified By
+    - Product Code, Description, Family, Name, SKU
+    - Quantity Unit of Measure
+
+6. **Price Book** 
+    
