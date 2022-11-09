@@ -389,5 +389,44 @@ Explicar qué son conceptualmente, qué datos almacenan en forma estándar y có
 
 **Diagrama de relaciones**
 
+![UML relaciones](/img/uml.png)
+
+
+## Ejercicio 6
+
+## Ejercicio 7
+
+Importar al Playground el archivo CSV compartido por Laura Lejarza, utilizando Dataloader.
+
+**Mostrar cómo fue realizado paso a paso**.
+
+1. Tras el análisis inicial del archivo de importación, se añadieron los campos correspondientes en el objeto Account. 
+2. Se realizó una limpieza del documento en Excel para eliminar las columnas sin valores y se exportó el CSV. 
+3. Se inició sesión en el Dataloader (cabe mencionar que se utilizó el Playground llamado "EjercicioInmobiliaria" que se puede encontrar en mi [perfil de Trailhead](https://trailblazer.me/id/carlosconde), y se seleccionó insert.
+4. Se seleccionó el objeto Account y el archivo de importación.
+
+![Selección CSV](/img/seleccion.png)
+
+5. Se seleccionó la opción de create or edit map, se utilizó la opción de auto-match fields to columns, se verificó que el mapeo propuesto fuera correcto.
+
+![Mapeo](/img/mapeo.png)
+
+6. Se indicó la ubicación del directorio para crear los archivos de errores y éxitos para finalizar con la importación.
+7. Se crearon los documentos correspondientes que confirman una importación exitosa.
+
+![Confirmación](/img/confirma.png)
+
+**Un listado que muestre sólo las cuentas importadas, que la lista muestre una columna por cada columna del CSV.
+
+Se agregó un campo llamado Importada_procontacto con un valor de "Sí" con el objetivo de colocar en la lista un filtro que muestre efectivamente sólo las cuentas importadas.
+
+![Filtro](/img/filtro.png)
+
+A continuación se muestra la lista con las columnas solicitadas. Cabe mencionar que no se puede configurar para visualizarlas todas ya que el límite es de 15.
+
+![Lista](/img/lista.png)
+
+
+
 
 
