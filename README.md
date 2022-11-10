@@ -412,11 +412,14 @@ Importar al Playground el archivo CSV compartido por Laura Lejarza, utilizando D
 ![Mapeo](/img/mapeo.png)
 
 6. Se indicó la ubicación del directorio para crear los archivos de errores y éxitos para finalizar con la importación.
+
+![Directorio](/img/directorio.png)
+
 7. Se crearon los documentos correspondientes que confirman una importación exitosa.
 
 ![Confirmación](/img/confirma.png)
 
-**Un listado que muestre sólo las cuentas importadas, que la lista muestre una columna por cada columna del CSV.
+**Un listado que muestre sólo las cuentas importadas, que la lista muestre una columna por cada columna del CSV.**
 
 Se agregó un campo llamado Importada_procontacto con un valor de "Sí" con el objetivo de colocar en la lista un filtro que muestre efectivamente sólo las cuentas importadas.
 
@@ -428,5 +431,21 @@ A continuación se muestra la lista con las columnas solicitadas. Cabe mencionar
 
 
 
+Una vez realizada la importación de Accounts, se procede a realizar la importación de Opportunities. Cabe mencionar que cada Opportunity está asociada a una Account, por lo que para realizarlo en Dataloader se requiere exportar las cuentas y sus respectivos ids para poder mapearlos.
+
+1. Se selecciona export en Dataloader, se escoge Account y se establece la ubicación del CSV a exportar.
+
+
+![Export](/img/export1.png)
+
+2. Se selecciona el nombre y el ID para su exportación, también se añade el filtro para exportar únicamente los datos que fueron importados en el ejercicio anterior.
+
+![Export2](/img/export2.png)
+
+3. Se abre el archivo para asignarle el ID utilizando la función VLOOKUP de Excel. 
+
+![vlookup](/img/vlookup.png)
+
+Cabe mencionar que por la naturaleza de las relaciones de Salesforce, importar una oportunidad tiene como prerequisito tener registrada la cuenta relacionada. Esto quiere decir que para fines de este ejercicio no se realizó la importación completa de oportunidades, únicamente aquellas cuya cuenta ya era existente. En ambiente de producción, se tendría que realizar el registro completo de cuentas para posteriormente importar las oportunidades.
 
 
